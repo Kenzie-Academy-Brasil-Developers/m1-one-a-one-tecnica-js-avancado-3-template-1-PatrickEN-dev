@@ -22,18 +22,3 @@ const funcionarios = [
         tempoEmpresa: 8,
     },
 ];
-
-function atualizarSalariosDepartamento(funcionarios){
-
-    for(let i = 0; i< funcionarios.length; i++){
-
-        if(funcionarios[i].departamento == "Financeiro"){
-            funcionarios[i].salario += 500
-        }
-
-    }
-
-     return funcionarios
-
-}
-console.log(atualizarSalariosDepartamento(funcionarios))
