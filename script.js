@@ -1,4 +1,4 @@
-const funcionarios = [
+let funcionarios = [
     {
         nome: "Jose",
         email: "jose@gmail.com",
@@ -22,3 +22,13 @@ const funcionarios = [
         tempoEmpresa: 8,
     },
 ];
+
+function aumentaSalario (funcionarios) {
+    for (let i = 0; i < funcionarios.length; i++) {
+        if (funcionarios[i].departamento == "financeiro") {
+            funcionarios[i].salario + 500
+        }
+    }
+    return funcionarios
+}
+console.log(aumentaSalario(funcionarios))
